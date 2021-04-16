@@ -1,0 +1,22 @@
+UserFlow
+    Register/Login
+        Team/Org flow?
+    
+    How are forms organized/Categorized?
+        Product
+        Team
+        Tags
+        Org
+        Type?
+            What does a form type involve
+            How does that differ from a Tags
+        Name
+        Use?
+            What uses would be listed?
+        Template!!!!
+    
+    ^^ This info is useful to know what is being grabbed on login.
+
+    How is it being displayed.
+        Need to make mockups of Product
+
