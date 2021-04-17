@@ -1,6 +1,5 @@
 import "./App.scss";
 import UI from "./UI";
-import { fullForm } from "./devData/fullForm";
 import FormBuilder from "./Components/FormBuilder";
 const { HelloWorld, Form, TextBox } = UI;
 const texts = ["my", "test", "text", "here"];
@@ -11,11 +10,11 @@ function App() {
     <div className="App">
       <MyText value="Hello World" />
       <FormBuilder />
-      <Form title="Form Title">
+      {/* <Form title="Form Title">
         {texts.map((t) => {
           return <TextBox value={t} />;
         })}
-      </Form>
+      </Form> */}
     </div>
   );
 }

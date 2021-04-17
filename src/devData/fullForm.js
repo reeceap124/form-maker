@@ -1,19 +1,17 @@
-const fieldTemplate = {
-  id: 2, //same table as formTemplate?
-  component: "TextBox",
-  opts: "",
-  value: "test text box",
-  creationDate: "timestamp",
-  modificationDate: "timestamp"
-};
-const formtemplate = {
-  id: 1,
-  teams: ["default", "awesome"],
-  component: "Form",
-  access: "general",
-  creationDate: "timestamp",
-  modificationDate: "timestamp"
-};
+// const fieldTemplate = {
+//   id: 2, //same table as formTemplate?
+//   component: "TextBox",
+//   creationDate: "timestamp",
+//   modificationDate: "timestamp"
+// };
+// const formtemplate = {
+//   id: 1,
+//   teams: ["default", "awesome"],
+//   component: "Form",
+//   access: "general",
+//   creationDate: "timestamp",
+//   modificationDate: "timestamp"
+// };
 export const fullForm = {
   id: 1,
   template: {
@@ -24,6 +22,7 @@ export const fullForm = {
   },
   fields: [
     {
+      id: 3,
       template: {
         id: 2,
         component: "TextBox"
@@ -35,6 +34,7 @@ export const fullForm = {
       modificationDate: "timestamp"
     },
     {
+      id: 4,
       template: {
         id: 2,
         component: "TextBox"

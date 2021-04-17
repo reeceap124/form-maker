@@ -2,7 +2,15 @@ import React from "react";
 import "./TextBox.scss";
 
 const TextBox = (props) => {
-  return <input className="TextBox" type="text" value={props.value} />;
+  return (
+    <input
+      className="TextBox"
+      type="text"
+      value={props.value}
+      name={props.name}
+      onChange={props.onChange}
+    />
+  );
 };
 
 export default TextBox;
