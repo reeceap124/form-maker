@@ -14,7 +14,7 @@ const formtemplate = {
   creationDate: "timestamp",
   modificationDate: "timestamp"
 };
-const fullForm = {
+export const fullForm = {
   id: 1,
   template: {
     teams: ["default", "awesome"],
@@ -28,13 +28,25 @@ const fullForm = {
         id: 2,
         component: "TextBox"
       },
-      order: 1,
+      order: 2,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my test text",
       creationDate: "timestamp",
       modificationDate: "timestamp"
+    },
+    {
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 1,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "my second test text",
+      creationDate: "timestamp",
+      modificationDate: "timestamp"
     }
   ],
+  title: "Constructed Title",
   access: "general",
   creationDate: "timestamp",
   modificationDate: "timestamp"
