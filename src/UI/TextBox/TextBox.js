@@ -1,11 +1,12 @@
 import React from "react";
+import { Input } from "semantic-ui-react";
 import "./TextBox.scss";
 
 const TextBox = (props) => {
   return (
-    <input
+    <Input
+      fluid
       className="TextBox"
-      type="text"
       value={props.value}
       name={props.name}
       onChange={props.onChange}

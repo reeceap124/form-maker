@@ -18,7 +18,8 @@ export const fullForm = {
     teams: ["default", "awesome"],
     component: "Form",
     creationDate: "timestamp",
-    modificationDate: "timestamp"
+    modificationDate: "timestamp",
+    modificationBy: "name"
   },
   fields: [
     {
@@ -27,11 +28,12 @@ export const fullForm = {
         id: 2,
         component: "TextBox"
       },
-      order: 2,
+      order: 0,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my test text",
       creationDate: "timestamp",
-      modificationDate: "timestamp"
+      modificationDate: "timestamp",
+      modificationBy: "name"
     },
     {
       id: 4,
@@ -43,11 +45,13 @@ export const fullForm = {
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my second test text",
       creationDate: "timestamp",
-      modificationDate: "timestamp"
+      modificationDate: "timestamp",
+      modificationBy: "name"
     }
   ],
   title: "Constructed Title",
   access: "general",
   creationDate: "timestamp",
-  modificationDate: "timestamp"
+  modificationDate: "timestamp",
+  modificationBy: "name"
 };

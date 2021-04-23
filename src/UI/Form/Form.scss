@@ -1,6 +1,10 @@
-.Form {
+.ui.form.Form {
   display: flex;
   flex-direction: column;
-  max-width: 20vw;
+  max-width: 25vw;
   margin: auto;
+
+  > * {
+    margin: 2%;
+  }
 }
