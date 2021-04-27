@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "semantic-ui-react";
-import "./Form.scss";
+import "./Form.less";
 const MyForm = (props) => {
   const [state, setState] = useState(1);
   const logVal = (e) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Input } from "semantic-ui-react";
-import "./TextBox.scss";
+import "./TextBox.less";
 
 const TextBox = (props) => {
   return (

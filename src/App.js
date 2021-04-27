@@ -1,8 +1,7 @@
-import "./App.scss";
-import "semantic-ui-css/semantic.min.css";
+import "./App.less";
 import UI from "./UI";
 import FormBuilder from "./Components/FormBuilder";
-const { HelloWorld, Form, TextBox } = UI;
+const { HelloWorld } = UI;
 
 function App() {
   const MyText = HelloWorld;
