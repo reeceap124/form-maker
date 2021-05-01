@@ -1,0 +1,8 @@
+.ui.form.Form {
+  display: flex;
+  flex-direction: column;
+  background: red;
+  > * {
+    margin: 2%;
+  }
+}

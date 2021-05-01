@@ -1,8 +1,8 @@
 import React from "react";
-import "./CircleButton.less";
+import "./CircleButton.scss";
 
 const CircleButton = (props) => {
-  return <button>{props.children}</button>;
+  return <button>button</button>;
 };
 
 export default CircleButton;

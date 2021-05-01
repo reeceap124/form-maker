@@ -1,11 +1,9 @@
 import React from "react";
-import { Input } from "semantic-ui-react";
-import "./TextBox.less";
+import "./TextBox.scss";
 
 const TextBox = (props) => {
   return (
-    <Input
-      fluid
+    <input
       className="TextBox"
       value={props.value}
       name={props.name}

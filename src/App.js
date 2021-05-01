@@ -1,4 +1,4 @@
-import "./App.less";
+import "./App.scss";
 import UI from "./UI";
 import FormBuilder from "./Components/FormBuilder";
 const { HelloWorld } = UI;
