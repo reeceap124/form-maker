@@ -1,0 +1,32 @@
+.CircleButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  color: var(--color-secondary);
+  background: var(--color-primary);
+
+  :active {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+  }
+}
+.CircleButtonLabel {
+  position: absolute;
+  width: 0;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  right: 75px;
+  overflow: hidden;
+  text-align: right;
+  transition-delay: 0ms;
+  transition: width 100ms;
+}
+.open .CircleButtonLabel {
+  width: 115%;
+  transition: all 500ms;
+  transition-delay: 500ms;
+  background: var(--color-primary);
+  color: white;
+  padding: 5% 10%;
+}

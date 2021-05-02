@@ -1,0 +1,19 @@
+.buttonNav {
+  position: fixed;
+  bottom: 80px;
+  right: 32px;
+}
+.itemsWrapper {
+  height: 0;
+  //   background: red;
+  display: flex;
+  flex-direction: column;
+  transition: height 500ms;
+  overflow: hidden;
+  > * {
+    margin: 4px;
+  }
+}
+.open {
+  height: 180px;
+}

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import UI from "../UI";
 import { fullForm } from "../devData/fullForm";
-import { Button } from "semantic-ui-react";
 const props = fullForm;
 const FormBuilder = () => {
   const orderObects = (a, b) => (a.order > b.order ? 1 : -1);
@@ -32,7 +31,6 @@ const FormBuilder = () => {
           />
         );
       })}
-      <Button type="submit">Submit</Button>
     </Form>
   );
 };
