@@ -1,8 +1,8 @@
-.ui.form.Form {
+Form {
   display: flex;
   flex-direction: column;
-  background: red;
   > * {
-    margin: 2%;
+    margin: 3%;
+    border: 1px solid black;
   }
 }
