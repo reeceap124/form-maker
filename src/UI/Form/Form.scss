@@ -3,5 +3,7 @@ Form {
   flex-direction: column;
   > * {
     margin: 3%;
+    min-height: 40px;
+    min-width: 40px;
   }
 }
