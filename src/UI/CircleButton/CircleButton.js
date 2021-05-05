@@ -4,7 +4,13 @@ import "./CircleButton.scss";
 const CircleButton = (props) => {
   return (
     <label>
-      <span className="CircleButtonLabel">{props.label}</span>
+      <span
+        className={
+          "CircleButtonLabel " + (props.labelOpen ? "labelOpen" : null)
+        }
+      >
+        {props.label}
+      </span>
 
       <button className="CircleButton" onClick={props.onClick}>
         {props.children}

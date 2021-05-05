@@ -21,14 +21,14 @@ const ButtonNav = (props) => {
 
   return (
     <div className="buttonNav">
-      <div className={"itemsWrapper " + (open ? "open" : "closed")}>
-        <Button label="New Team">
+      <div className={"itemsWrapper " + (open ? "buttonNavOpen" : null)}>
+        <Button labelOpen={open} label="New Team">
           <FontAwesomeIcon icon={faHandshake} />
         </Button>
-        <Button label="New Project">
+        <Button labelOpen={open} label="New Project">
           <FontAwesomeIcon icon={faTools} />
         </Button>
-        <Button label="New Form">
+        <Button labelOpen={open} label="New Form">
           <FontAwesomeIcon icon={faList} />
         </Button>
       </div>

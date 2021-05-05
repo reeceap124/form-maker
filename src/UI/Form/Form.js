@@ -1,20 +1,14 @@
-import React, { useState } from "react";
+import React, { forwardRef } from "react";
 import "./Form.scss";
-const Form = (props) => {
-  const [state, setState] = useState(1);
-  const logVal = (e) => {
-    setState(parseInt(e.target.value));
-    console.log("type:", typeof state);
-    console.log("value", state);
-  };
+const Form = forwardRef((props, ref) => {
   return (
-    <form className="Form" onSubmit={props.onSubmit}>
+    <form className="Form" onSubmit={props.onSubmit} ref={ref}>
       <h3>{props.title}</h3>
       {props.children}
 
       {/* <input type="number" onChange={logVal} value={state} /> */}
     </form>
   );
-};
+});
 
 export default Form;

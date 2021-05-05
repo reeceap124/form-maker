@@ -3,6 +3,7 @@ Form {
   flex-direction: column;
   > * {
     margin: 3%;
-    border: 1px solid black;
+    min-height: 40px;
+    min-width: 40px;
   }
 }

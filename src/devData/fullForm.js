@@ -28,7 +28,7 @@ export const fullForm = {
         id: 2,
         component: "TextBox"
       },
-      order: 0,
+      order: 3,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my test text",
       creationDate: "timestamp",
@@ -41,9 +41,35 @@ export const fullForm = {
         id: 2,
         component: "TextBox"
       },
-      order: 1,
+      order: 2,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my second test text",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 5,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 0,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "here's a third value",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 6,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 4,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "a last bit of testing input",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
