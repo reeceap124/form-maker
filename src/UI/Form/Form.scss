@@ -1,8 +1,14 @@
 Form {
   display: flex;
   flex-direction: column;
+  :focus {
+    border: 2px solid var(--color-secondary) !important;
+  }
+  :focus-within {
+    outline: none;
+  }
   > * {
-    margin: 3%;
+    margin: 0.75rem;
     min-height: 40px;
     min-width: 40px;
   }

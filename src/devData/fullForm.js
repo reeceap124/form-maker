@@ -31,6 +31,7 @@ export const fullForm = {
       order: 3,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my test text",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -44,6 +45,7 @@ export const fullForm = {
       order: 4,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my second test text",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -57,6 +59,7 @@ export const fullForm = {
       order: 5,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "here's a third value",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -70,6 +73,7 @@ export const fullForm = {
       order: 6,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "a last bit of testing input",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -83,6 +87,7 @@ export const fullForm = {
       order: 0,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my test text",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -96,6 +101,7 @@ export const fullForm = {
       order: 9,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my second test text",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -109,6 +115,7 @@ export const fullForm = {
       order: 8,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "here's a third value",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -122,6 +129,7 @@ export const fullForm = {
       order: 7,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "a last bit of testing input",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -135,6 +143,7 @@ export const fullForm = {
       order: 2,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "here's a third value",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -148,6 +157,7 @@ export const fullForm = {
       order: 1,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "a last bit of testing input",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
@@ -161,6 +171,7 @@ export const fullForm = {
       order: 15,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "a last bit of testing input",
+      title: "test label",
       creationDate: "timestamp",
       modificationDate: "timestamp",
       modificationBy: "name"
