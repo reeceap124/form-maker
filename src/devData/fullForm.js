@@ -41,7 +41,7 @@ export const fullForm = {
         id: 2,
         component: "TextBox"
       },
-      order: 2,
+      order: 4,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "my second test text",
       creationDate: "timestamp",
@@ -54,7 +54,7 @@ export const fullForm = {
         id: 2,
         component: "TextBox"
       },
-      order: 0,
+      order: 5,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "here's a third value",
       creationDate: "timestamp",
@@ -67,7 +67,98 @@ export const fullForm = {
         id: 2,
         component: "TextBox"
       },
-      order: 4,
+      order: 6,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "a last bit of testing input",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 10,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 0,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "my test text",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 9,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 9,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "my second test text",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 8,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 8,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "here's a third value",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 7,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 7,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "a last bit of testing input",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 12,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 2,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "here's a third value",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 11,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 1,
+      opts: ["style", "thing", "etc"], //focus on opts later
+      value: "a last bit of testing input",
+      creationDate: "timestamp",
+      modificationDate: "timestamp",
+      modificationBy: "name"
+    },
+    {
+      id: 15,
+      template: {
+        id: 2,
+        component: "TextBox"
+      },
+      order: 15,
       opts: ["style", "thing", "etc"], //focus on opts later
       value: "a last bit of testing input",
       creationDate: "timestamp",
