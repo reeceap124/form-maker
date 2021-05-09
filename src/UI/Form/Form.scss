@@ -1,9 +1,33 @@
-Form {
+.Form {
   display: flex;
   flex-direction: column;
+  :focus {
+    border: 2px solid var(--color-secondary) !important;
+  }
+  :focus-within {
+    outline: none;
+  }
   > * {
-    margin: 3%;
+    margin: 0.75rem;
     min-height: 40px;
     min-width: 40px;
   }
+}
+.FormItem-enter {
+  opacity: 0.01;
+  transform: scale(1.05);
+}
+.FormItem-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 750ms;
+}
+.FormItem-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.FormItem-exit-active {
+  opacity: 0.01;
+  transform: scale(1.05);
+  transition: all 750ms;
 }

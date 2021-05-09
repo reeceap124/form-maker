@@ -1,0 +1,17 @@
+.pageIndicator_wrapper {
+  display: flex;
+  justify-content: center;
+  .pageIndicator {
+    background-color: none;
+    min-height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: background-color 250ms ease;
+    margin: 0.5rem;
+  }
+  .pageIndicator_active {
+    background-color: var(--color-primary);
+    transition-delay: 250ms;
+  }
+}
