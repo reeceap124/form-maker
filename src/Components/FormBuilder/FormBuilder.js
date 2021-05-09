@@ -41,6 +41,7 @@ const FormBuilder = () => {
       <PageIndicator
         length={fields?.length ? fields.length : 0}
         active={page}
+        handleClick={setPage}
       />
       <TransitionGroup component={null}>
         <Form title={props.title} onSubmit={handleSubmit} ref={formRef}>
@@ -73,7 +74,6 @@ const FormBuilder = () => {
         onClick={(e) => {
           e.preventDefault();
           setPage((prev) => prev - 1);
-          console.log("newpage", fields[page]);
         }}
       >
         Prev
@@ -82,7 +82,6 @@ const FormBuilder = () => {
         onClick={(e) => {
           e.preventDefault();
           setPage((prev) => prev + 1);
-          console.log("newpage", fields[page]);
         }}
       >
         Next

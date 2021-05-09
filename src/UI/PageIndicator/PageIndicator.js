@@ -14,6 +14,7 @@ const PageIndicator = (props) => {
           className={`pageIndicator ${
             index === props.active ? "pageIndicator_active" : null
           }`}
+          onClick={() => props.handleClick(index)}
         />
       ))}
     </div>

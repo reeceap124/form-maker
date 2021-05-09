@@ -15,19 +15,19 @@
 }
 .FormItem-enter {
   opacity: 0.01;
-  // transform: scale(1.1);
+  transform: scale(1.05);
 }
 .FormItem-enter-active {
   opacity: 1;
-  // transform: scale(1);
+  transform: scale(1);
   transition: all 750ms;
 }
 .FormItem-exit {
   opacity: 1;
-  // transform: scale(1);
+  transform: scale(1);
 }
 .FormItem-exit-active {
   opacity: 0.01;
-  // transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 750ms;
 }
