@@ -9,7 +9,6 @@ export const paginateForm = (fieldsRef, target, formPage) => {
       Number(marginTop.replace("px", "")) +
       Number(marginBottom.replace("px", "")) +
       value.offsetHeight;
-    console.log("outer height", outerHeight);
     if (value === null) continue;
     if (outerHeight >= target) {
       if (pagesArr[currentPage].length < 1) {

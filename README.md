@@ -6,6 +6,8 @@
 
 - Layouts: Meant for packaging up and organizing the UI (May merge this back into the components/smart components category. We'll burn that bridge when we get to it.)
 
+- All form components are exported as a UI object via UI/index.js. From there the data can specify the UI component that it should be built with in FormBuilder.js
+
 # UI Patterns:
 
 - Read that 40px is about the minimum that is really useable for inputs on mobile.
@@ -29,5 +31,17 @@
 - form submission logic
 
 - form retrieval logic
+
+- ~~pagination of forms on various devices~~
+
+- ~~Add new navigation~~
+
+- ~~Dynamic form storage pattern~~
+
+- User profile view
+
+- Profile editing
+
+- Routing
 
 -

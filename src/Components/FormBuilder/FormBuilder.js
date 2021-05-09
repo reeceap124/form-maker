@@ -12,7 +12,6 @@ const FormBuilder = () => {
   const formRef = useRef(null);
   //Map for keeping fields in order
   const fieldRef = useRef(new Map());
-  console.log("DOC HEIGHT", document.body.scrollHeight);
   useLayoutEffect(() => {
     if (fieldRef.current) {
       const innerHeight = window.innerHeight;
@@ -29,6 +28,13 @@ const FormBuilder = () => {
     let newArr = [...fields];
     newArr[page][index].value = e.target.value;
     setFields(newArr);
+  };
+
+  const handlePage = (index) => (e) => {
+    e.preventDefault();
+    if (index < 0) return;
+    if (index >= fields.length) return;
+    setPage(index);
   };
 
   const handleSubmit = (e) => {
@@ -51,7 +57,8 @@ const FormBuilder = () => {
                 return (
                   <CSSTransition
                     key={`form_${props.id}__field_${field.id}`}
-                    in={page}
+                    in={true}
+                    appear={true}
                     classNames="FormItem"
                     timeout={750}
                   >
@@ -70,22 +77,8 @@ const FormBuilder = () => {
         </Form>
       </TransitionGroup>
 
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          setPage((prev) => prev - 1);
-        }}
-      >
-        Prev
-      </button>
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          setPage((prev) => prev + 1);
-        }}
-      >
-        Next
-      </button>
+      <button onClick={handlePage(page - 1)}>Prev</button>
+      <button onClick={handlePage(page + 1)}>Next</button>
     </>
   );
 };
