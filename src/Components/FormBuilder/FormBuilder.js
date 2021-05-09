@@ -18,7 +18,7 @@ const FormBuilder = () => {
       const innerHeight = window.innerHeight;
       const docHeight = document.body.scrollHeight;
       const formHeight = formRef.current.offsetHeight;
-      const target = innerHeight - (docHeight - formHeight) - 40;
+      const target = innerHeight - (docHeight - formHeight) - 80;
       setFields(paginateForm(fieldRef.current, target, fields[page]));
     }
   }, [props.fields, fieldRef.current]);
@@ -38,27 +38,35 @@ const FormBuilder = () => {
 
   return (
     <>
-      <PageIndicator length={fields.length} active={page} />
+      <PageIndicator
+        length={fields?.length ? fields.length : 0}
+        active={page}
+      />
       <TransitionGroup component={null}>
-        <CSSTransition>
-          <Form title={props.title} onSubmit={handleSubmit} ref={formRef}>
-            {fields[page]
-              ? fields[page].map((field, index) => {
-                  const Field = UI[field.template.component];
-                  return (
+        <Form title={props.title} onSubmit={handleSubmit} ref={formRef}>
+          {fields[page]
+            ? fields[page].map((field, index) => {
+                const Field = UI[field.template.component];
+                return (
+                  <CSSTransition
+                    key={`form_${props.id}__field_${field.id}`}
+                    in={page}
+                    classNames="FormItem"
+                    timeout={750}
+                  >
                     <Field
-                      key={`form_${props.id}__field_${field.id}`}
+                      cName="FormItem"
                       value={field.value}
                       label={field.title}
                       name={`form_${props.id}__field_${field.id}`}
                       onChange={handleChanges(index)}
                       ref={(el) => fieldRef.current.set(field.id, el)}
                     />
-                  );
-                })
-              : null}
-          </Form>
-        </CSSTransition>
+                  </CSSTransition>
+                );
+              })
+            : null}
+        </Form>
       </TransitionGroup>
 
       <button

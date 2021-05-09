@@ -1,4 +1,4 @@
-Form {
+.Form {
   display: flex;
   flex-direction: column;
   :focus {
@@ -12,4 +12,22 @@ Form {
     min-height: 40px;
     min-width: 40px;
   }
+}
+.FormItem-enter {
+  opacity: 0.01;
+  // transform: scale(1.1);
+}
+.FormItem-enter-active {
+  opacity: 1;
+  // transform: scale(1);
+  transition: all 750ms;
+}
+.FormItem-exit {
+  opacity: 1;
+  // transform: scale(1);
+}
+.FormItem-exit-active {
+  opacity: 0.01;
+  // transform: scale(1.1);
+  transition: all 750ms;
 }

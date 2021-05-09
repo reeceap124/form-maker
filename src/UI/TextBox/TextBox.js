@@ -3,7 +3,10 @@ import "./TextBox.scss";
 
 const TextBox = forwardRef((props, ref) => {
   return (
-    <div className="TextBox_wrapper" ref={ref}>
+    <div
+      className={`TextBox_wrapper${props.cName ? " " + props.cName : ""}`}
+      ref={ref}
+    >
       {props.label ? (
         <label className="TextBox_label">{props.label}</label>
       ) : null}
