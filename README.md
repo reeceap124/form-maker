@@ -12,15 +12,34 @@
 
 - Read that 40px is about the minimum that is really useable for inputs on mobile.
 
+# Views:
+
+- Landing/Login/Signup
+
+- Home
+
+- Profile edit
+
+- New Team, Project, Form
+
+- Form builder
+
+- Form filler
+
+- Form editor
+
+- Form Select
+  - May tie in with home view
+
 # Future Feature:
 
 - User registration/login
 
-- Full new form navigation (mobile)
+- Full new form navigation (mobile) (web)
 
-- full new team navigation (mobile)
+- full new team navigation (mobile) (web)
 
-- full new project navigation (mobile)
+- full new project navigation (mobile) (web)
 
 - storing forms created/submitted while offline
 
@@ -44,4 +63,6 @@
 
 - Routing
 
--
+- Photo storage
+
+- Adding Teams, Projects, and Forms

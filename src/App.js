@@ -1,13 +1,20 @@
 import "./App.scss";
 import React from "react";
-import FormBuilder from "./Components/FormBuilder";
 import ButtonNav from "./Layouts/ButtonNav";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import Routes from "./Components/Routes/Routes";
 
 function App() {
   return (
     <div className="App">
-      <FormBuilder />
-      <ButtonNav />
+      <Router>
+        {/* <FormBuilder /> */}
+        <ButtonNav />
+        <Link to="/form/1">
+          <button>Form Builder</button>
+        </Link>
+        <Routes />
+      </Router>
     </div>
   );
 }
