@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./ButtonNav.scss";
 import UI from "../../UI";
 import {
@@ -22,15 +23,21 @@ const ButtonNav = (props) => {
   return (
     <div className="buttonNav">
       <div className={"itemsWrapper " + (open ? "buttonNavOpen" : null)}>
-        <Button labelOpen={open} label="New Team">
-          <FontAwesomeIcon icon={faHandshake} />
-        </Button>
-        <Button labelOpen={open} label="New Project">
-          <FontAwesomeIcon icon={faTools} />
-        </Button>
-        <Button labelOpen={open} label="New Form">
-          <FontAwesomeIcon icon={faList} />
-        </Button>
+        <Link to="/new/team" onClick={() => setOpen(false)}>
+          <Button labelOpen={open} label="New Team">
+            <FontAwesomeIcon icon={faHandshake} />
+          </Button>
+        </Link>
+        <Link to="/new/project" onClick={() => setOpen(false)}>
+          <Button labelOpen={open} label="New Project">
+            <FontAwesomeIcon icon={faTools} />
+          </Button>
+        </Link>
+        <Link to="/new/form" onClick={() => setOpen(false)}>
+          <Button labelOpen={open} label="New Form">
+            <FontAwesomeIcon icon={faList} />
+          </Button>
+        </Link>
       </div>
       <Button onClick={toggleOpen}>
         {open ? (

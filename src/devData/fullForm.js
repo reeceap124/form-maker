@@ -15,6 +15,7 @@
 export const fullForm = {
   id: 1,
   template: {
+    title: "Custom Template Title",
     teams: ["default", "awesome"],
     component: "Form",
     creationDate: "timestamp",
