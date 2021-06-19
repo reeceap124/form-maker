@@ -15,6 +15,7 @@
 export const fullForm = {
   id: 1,
   template: {
+    id: 1,
     title: "Custom Template Title",
     teams: ["default", "awesome"],
     component: "Form",
@@ -179,7 +180,7 @@ export const fullForm = {
     }
   ],
   title: "Constructed Title",
-  access: "general",
+  public: true,
   creationDate: "timestamp",
   modificationDate: "timestamp",
   modificationBy: "name"

@@ -1,23 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./NewForm.scss";
+import { Link } from "react-router-dom";
+import CreatableSelect from "react-select/creatable";
 
 const teams = ["Awesome", "Superbad"];
 const projects = ["World Domination"];
 // const templates = [];
-const NewForm = () => {
-  const AddOption = ({ name, callback }) => {
-    return <option>Add {name}</option>;
+const NewForm = (props) => {
+  const handleCreate = () => {
+    //go to creation page
+    //save title of new creation to state
+    return null;
   };
-  console.log("we made it to newform");
+
   return (
     <div className="NewForm">
       <label>
         Team:
-        <select onChange={() => console.log("clickyboi")}>
+        <CreatableSelect
+          onCreateOption={() => {}}
+          onChange={() => console.log("clickyboi")}
+          options={teams.map((t) => {
+            return { value: t, label: t + "Label" };
+          })}
+        />
+        <select>
           {teams.map((t, i) => (
             <option key={`team_${i}`}>{t}</option>
           ))}
-          <AddOption name="team" />
         </select>
       </label>
       <label>
@@ -26,7 +36,6 @@ const NewForm = () => {
           {projects.map((p, i) => (
             <option key={`project_${i}`}>{p}</option>
           ))}
-          <AddOption name="project" />
         </select>
       </label>
       <label>

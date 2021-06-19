@@ -35,9 +35,9 @@
 
 - User registration/login
 
-- Full new form navigation (mobile) (web)
+- ~~Full new form navigation (mobile)~~ (web)
 
-- full new team navigation (mobile) (web)
+- ~~full new team navigation (mobile)~~ (web)
 
 - full new project navigation (mobile) (web)
 
@@ -61,8 +61,8 @@
 
 - Profile editing
 
-- Routing
+- ~~Routing~~
 
 - Photo storage
 
-- Adding Teams, Projects, and Forms
+- A better select component (main current use case in NewForm)
