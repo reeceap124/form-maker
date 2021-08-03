@@ -17,7 +17,8 @@ export const fullForm = {
   template: {
     id: 1,
     title: "Custom Template Title",
-    teams: ["default", "awesome"],
+    owner: "some uid",
+    public: true,
     component: "Form",
     creationDate: "timestamp",
     modificationDate: "timestamp",

@@ -5,9 +5,9 @@ import { Route, useRouteMatch } from "react-router-dom";
 
 const NewMaker = (props) => {
   const [view, setView] = useState(null);
-  const teams = useState({ test: "test team from stateManager" });
-  const projects = useState({});
-  const forms = useState({});
+  const team = useState({ test: "test team from stateManager" });
+  const project = useState({});
+  const form = useState({});
   const fields = useState([]);
   const [newForm, setNewForm] = useState({
     template: undefined,
@@ -36,22 +36,17 @@ const NewMaker = (props) => {
     };
   };
   const formsState = stateManager().newStates({
-    teams,
-    projects,
-    forms,
+    team,
+    project,
+    form,
     fields
   });
   console.log("form state", formsState);
-
-  console.log("gotten teams", formsState.get("teams"));
-  formsState.get("teams").test &&
-    formsState.set("teams", { test2: "here be another update" });
-  console.log("gotten teams2", formsState.get("teams"));
   const { path } = useRouteMatch();
   return (
     <div className="NewMaker">
       <Route path={`${path}/form`}>
-        <NewForm />
+        <NewForm states={formsState} />
       </Route>
       <Route path={`${path}/team`}>
         <NewTeam />

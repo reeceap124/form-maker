@@ -1,14 +1,8 @@
 .App {
   --color-primary: rgb(38, 70, 83);
-  --color-secondary: #f4a261;
+  --color-secondary: white;
   text-align: center;
   * {
     box-sizing: border-box;
   }
-}
-
-.testDiv {
-  background: red;
-  height: 50px;
-  margin: 5px;
 }

@@ -24,11 +24,6 @@ const NewForm = (props) => {
             return { value: t, label: t + "Label" };
           })}
         />
-        <select>
-          {teams.map((t, i) => (
-            <option key={`team_${i}`}>{t}</option>
-          ))}
-        </select>
       </label>
       <label>
         Project:
